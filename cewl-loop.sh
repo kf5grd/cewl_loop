@@ -13,10 +13,10 @@ if [ -z ${1+x} ]; then
 	exit
 fi
 
-if [ -n ${2+x} ]; then
-	prefix=$2
-else
+if [ -z ${2+x} ]; then
 	prefix="cewl"
+else
+	prefix=$2
 fi
 
 n=0
